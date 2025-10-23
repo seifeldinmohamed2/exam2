@@ -1,4 +1,5 @@
-import 'package:exam2/domain/model/user.dart';
+
+import '../../domain/model/user.dart';
 
 class UserModel extends User {
   const UserModel({

@@ -1,5 +1,6 @@
-import 'package:exam2/auth/sign_in.dart';
 import 'package:flutter/material.dart';
+
+import 'features/auth/sign_in.dart';
 
 void main() {
   runApp(const MyApp());
