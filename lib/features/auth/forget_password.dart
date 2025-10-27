@@ -1,3 +1,4 @@
+import 'package:exam2/features/auth/sign_in.dart';
 import 'package:flutter/material.dart';
 
 import '../theme colors/app_colors.dart';
@@ -16,12 +17,17 @@ class _ForgetPasswordState extends State<ForgetPassword> {
       backgroundColor:AppColors.white ,
       body: Column(
         children: [
-          SizedBox(height: 50,),
+         SizedBox(height: 35,),
           Row(
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Icon(Icons.arrow_back_ios,color: AppColors.black,size: 40,),
+                child: IconButton(onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const SignIn()),
+                  );
+                }, icon: Icon(Icons.arrow_back_ios,color: AppColors.black,size: 40,),),
               ),
               Text(
                 "Forget Password",
@@ -31,6 +37,8 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                   fontSize: 30,
                 ),
               ),
+
+
             ],
           ),
         ],
