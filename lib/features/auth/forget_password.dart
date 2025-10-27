@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../theme colors/app_colors.dart';
 
-class SignIn extends StatefulWidget {
-  const SignIn({super.key});
+class ForgetPassword extends StatefulWidget {
+  const ForgetPassword({super.key});
 
   @override
-  State<SignIn> createState() => _SignInState();
+  State<ForgetPassword> createState() => _ForgetPasswordState();
 }
 
-class _SignInState extends State<SignIn> {
+class _ForgetPasswordState extends State<ForgetPassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class _SignInState extends State<SignIn> {
                 child: Icon(Icons.arrow_back_ios,color: AppColors.black,size: 40,),
               ),
               Text(
-                "Login",
+                "Forget Password",
                 style: TextStyle(
                   color: AppColors.black,
                   fontWeight: FontWeight.w700,
@@ -33,7 +33,6 @@ class _SignInState extends State<SignIn> {
               ),
             ],
           ),
-
         ],
       ),
     );
